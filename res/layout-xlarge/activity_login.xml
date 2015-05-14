@@ -23,7 +23,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/logintxt"
+        android:id="@+id/editLogin"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:layout_alignLeft="@+id/textView1"
@@ -39,13 +39,13 @@
     </EditText>
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editSenha"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_alignLeft="@+id/logintxt"
-        android:layout_alignRight="@+id/logintxt"
+        android:layout_alignLeft="@+id/editLogin"
+        android:layout_alignRight="@+id/editLogin"
         android:textSize="18pt"
-        android:layout_below="@+id/logintxt"
+        android:layout_below="@+id/editLogin"
         android:layout_marginTop="5dp"
         android:gravity="center" 
         android:background="#fff"
@@ -53,12 +53,12 @@
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btnLogar"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_below="@+id/editText2"
+        android:layout_alignLeft="@+id/editSenha"
+        android:layout_alignRight="@+id/editSenha"
+        android:layout_below="@+id/editSenha"
         android:layout_marginTop="5dp"
         android:textSize="18pt"
         android:textColor="#fff"
