@@ -32,9 +32,9 @@ public final class R {
         public static final int editLogin=0x7f080001;
         public static final int editSenha=0x7f080002;
         public static final int imageView1=0x7f080004;
-        public static final int listCompromisso=0x7f080005;
         public static final int listContatos=0x7f080006;
         public static final int listTarefa=0x7f080007;
+        public static final int text=0x7f080005;
         public static final int textView1=0x7f080000;
     }
     public static final class layout {

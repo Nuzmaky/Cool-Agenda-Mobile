@@ -2,6 +2,7 @@ package com.example.coolagenda;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -39,8 +40,15 @@ public class LoginActivity extends Activity implements OnClickListener {
 		String login = txtLogin.getText().toString();
 		String senha = txtSenha.getText().toString();
 
-		DialogOkNo(ValidaLogin(login,senha));
-		//DialogOkNo(acessaSharedPreferences(login, senha));		
+		//DialogOkNo(ValidaLogin(login,senha))
+		if (ValidaLogin(login, senha))
+			Cadastro(v);
+
+	}
+	
+	// Abre a tela de Cadastro	
+	public void Cadastro (View view){
+		startActivity(new Intent(this, ContatosActivity.class));				
 	}
     
 	
