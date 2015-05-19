@@ -40,15 +40,15 @@ public class LoginActivity extends Activity implements OnClickListener {
 		String login = txtLogin.getText().toString();
 		String senha = txtSenha.getText().toString();
 
-		//DialogOkNo(ValidaLogin(login,senha))
-		if (ValidaLogin(login, senha))
-			Cadastro(v);
+		DialogOkNo(ValidaLogin(login,senha));
+		//if (ValidaLogin(login, senha))
+			//Cadastro(v);
 
 	}
 	
 	// Abre a tela de Cadastro	
 	public void Cadastro (View view){
-		startActivity(new Intent(this, ContatosActivity.class));				
+		startActivity(new Intent(this, ContatoActivity.class));				
 	}
     
 	
@@ -75,15 +75,21 @@ public class LoginActivity extends Activity implements OnClickListener {
 
 		if (i == true)
 		{
-			AlertDialog.Builder alertaOK = new AlertDialog.Builder(this);
+			//Abre tela de Compromissos
+			startActivity(new Intent(this, CompromissoActivity.class));
+			
+			/*AlertDialog.Builder alertaOK = new AlertDialog.Builder(this);
 			alertaOK.setTitle("Login");
 			alertaOK.setMessage("Logado com sucesso!");
 			dialogOK = alertaOK.create();
 			// Abre a próxima tela				
-			dialogOK.show();
+			dialogOK.show();*/
+			
 		} 
 		else
 		{
+			//startActivity(new Intent(this, ContatoActivity.class));
+			
 			AlertDialog.Builder alertaNO = new AlertDialog.Builder(this);
 			alertaNO.setTitle("Login");
 			alertaNO.setMessage("Usuário ou senha errados!");

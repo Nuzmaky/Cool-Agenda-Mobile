@@ -22,8 +22,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>           
         </activity>
-        <activity android:name=".ContatosActivity"></activity>
-                <activity android:name=".ListaContatosActivity"></activity>
+        
+       <activity android:name=".Contato"></activity>
+       <activity android:name=".ContatoAdapter"></activity>
+       <activity android:name=".ContatoActivity"></activity>
+         
+        <activity android:name=".Compromisso"></activity>       
+        <activity android:name=".CompromissoAdapter"></activity>
+        <activity android:name=".CompromissoActivity"></activity>
+        
     </application>
 
 </manifest>

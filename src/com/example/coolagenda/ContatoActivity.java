@@ -1,5 +1,5 @@
 package com.example.coolagenda;
 
-public class ListaTarefaActivity {
+public class ContatoActivity {
 
 }
