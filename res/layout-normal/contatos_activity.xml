@@ -9,7 +9,59 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.coolagenda.ContatosActivity">
     
+    <TableLayout
+        android:id="@+id/tableLayoutContatoActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:id="@+id/tableRowContatoActivity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dip" >
+
+            <!--<TextView
+                android:id="@+id/txtID"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/txtIDP" />-->
+            
+            <TextView
+                android:id="@+id/txtNomeContatoP"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:padding="3dip"
+                android:text="@string/txtNomeContatoP" />
+
+            <TextView
+                android:id="@+id/txtEmailP"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txtEmailP" />
+
+            <TextView
+                android:id="@+id/txtEnderecoP"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/txtEnderecoP" />
+        </TableRow>               
+    </TableLayout>    
     
+    <LinearLayout
+        android:id="@+id/linearLayoutListContato"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal"
+        android:layout_below="@id/tableLayoutContatoActivity" >
+
+        <ListView
+            android:id="@+id/listaContatoActivity"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"> 
+			
+        </ListView>
+    </LinearLayout>     
    
     
 </RelativeLayout>

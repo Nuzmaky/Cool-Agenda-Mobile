@@ -6,6 +6,9 @@
     <string name="action_settings">Settings</string>
     <string name="Coolagendatxt">Cool Agenda</string>
     <string name="txtNomeP">Nome</string>
+    <string name="txtEmailP">E-mail</string>
+    <string name="txtEnderecoP">Endereco</string>
+    <string name="txtNomeContatoP">Nome</string>
     <string name="txtIDP">ID</string>
     <string name="txtDataInicialP">Data Inicial</string>
     <string name="txtDataFinalP">Data Final</string>

@@ -35,6 +35,11 @@ public class CompromissoAdapter extends ArrayAdapter<Compromisso> {
 		TextView txvDataInicial = (TextView)convertView.findViewById(R.id.txtDataInicial);
 		TextView txvDataFinal = (TextView)convertView.findViewById(R.id.txtDataFinal);
 		
+		Compromisso c = lista.get(position);
+		txvNome.setText(c.getNome());
+		txvDataInicial.setText(c.getDataInicial());
+		txvDataFinal.setText(c.getDataFinal());		
+		
 		return convertView;
 	}
 
