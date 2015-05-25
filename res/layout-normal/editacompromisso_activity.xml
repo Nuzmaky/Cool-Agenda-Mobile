@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cool-agenda-mobile.EditaContatoActivity" >
+    
+    <TextView
+        android:id="@+id/txvEditaNomeCompromisso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/txtNomeP" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/editEditaNomeCompromisso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvEditaNomeCompromisso"
+        android:labelFor="@+id/txvEditaNomeCompromisso" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txvEditaDataInicialCompromisso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEditaNomeCompromisso"
+        android:textSize="18sp"
+        android:text="@string/txtDataInicialP" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/editEditaDataInicialCompromisso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvEditaDataInicialCompromisso"
+        android:labelFor="@+id/txvEditaDataInicialCompromisso" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txvEditaDataFinalCompromisso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEditaDataInicialCompromisso"
+        android:textSize="18sp"
+        android:text="@string/txtDataFinalP" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/editEditaDataFinalCompromisso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvEditaDataFinalCompromisso"
+        android:labelFor="@+id/txvEditaDataFinalCompromisso" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEditaDataFinalCompromisso"
+        android:text="@string/salvar" >
+    </Button>
+    
+<Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEditaDataFinalCompromisso"
+        android:layout_toRightOf="@+id/btnSalvar"
+        android:text="@string/cancelar" >
+    </Button>    
+    
+
+</RelativeLayout>

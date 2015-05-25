@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.cool-agenda-mobile.EditaContatoActivity" >
+    
+    <TextView
+        android:id="@+id/txvEditaNomeContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="@string/txtNomeP" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/editEditaNomeContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvEditaNomeContato"
+        android:labelFor="@+id/txvEditaNomeContato" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txvEditaEmailContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEditaNomeContato"
+        android:textSize="18sp"
+        android:text="@string/txtEmailP" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/editEditaEmailContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvEditaEmailContato"
+        android:labelFor="@+id/txvEditaEmailContato" >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txvEditaEnderecoContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEditaEmailContato"
+        android:textSize="18sp"
+        android:text="@string/txtEnderecoP" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/editEditaEnderecoContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txvEditaEnderecoContato"
+        android:labelFor="@+id/txvEditaEnderecoContato" >
+    </EditText>
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEditaEnderecoContato"
+        android:text="@string/salvar" >
+    </Button>
+    
+<Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editEditaEnderecoContato"
+        android:layout_toRightOf="@+id/btnSalvar"
+        android:text="@string/cancelar" >
+    </Button>    
+    
+
+</RelativeLayout>

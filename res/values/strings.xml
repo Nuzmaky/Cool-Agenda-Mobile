@@ -8,6 +8,8 @@
     <string name="txtNomeP">Nome</string>
     <string name="txtEmailP">E-mail</string>
     <string name="txtEnderecoP">Endereco</string>
+    <string name="salvar">Salvar</string>
+    <string name="cancelar">Cancelar</string>
     <string name="txtNomeContatoP">Nome</string>
     <string name="txtIDP">ID</string>
     <string name="txtDataInicialP">Data Inicial</string>
