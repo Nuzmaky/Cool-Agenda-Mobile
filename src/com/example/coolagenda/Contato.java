@@ -2,23 +2,24 @@ package com.example.coolagenda;
 
 public class Contato {
 	
-	//private int id;
+	private int id;
 	private String nomeContato;
 	private String email;
 	private String endereco;
 	
 	public Contato() {}
 	
-	public Contato(String nomeContato, String email, String endereco) 	
+	public Contato(int id, String nomeContato, String email, String endereco) 	
 	{
 		super();
+		this.id = id;
 		this.nomeContato = nomeContato;
 		this.email = email;
 		this.endereco = endereco;	
 	}
 	
-	//public int getId() { return id; }
-	//public void setId(int id) {	this.id = id; }
+	public int getId() { return id; }
+	public void setId(int id) {	this.id = id; }
 	
 	public String getNomeContato() { return nomeContato; }
 	public void setNomeContato(String nomeContato) { this.nomeContato = nomeContato; }

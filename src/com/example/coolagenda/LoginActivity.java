@@ -76,7 +76,8 @@ public class LoginActivity extends Activity implements OnClickListener {
 		if (i == true)
 		{
 			//Abre tela de Compromissos
-			startActivity(new Intent(this, CompromissoActivity.class));
+			//startActivity(new Intent(this, CompromissoActivity.class));
+			startActivity(new Intent(this, MainActivity.class));
 			
 			/*AlertDialog.Builder alertaOK = new AlertDialog.Builder(this);
 			alertaOK.setTitle("Login");

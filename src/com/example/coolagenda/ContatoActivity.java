@@ -29,9 +29,9 @@ public class ContatoActivity extends Activity {
 	{
 		lista = new ArrayList<Contato>();
 		
-		lista.add(new Contato("Mateus Q.", "mateusq1@hotmail.com","Rua Vereador Horácio Arantes Silva, 148"));
-		lista.add(new Contato("Frederico V.", "frcolantonio@gmail.com","Rua do Planalto Verde, 171"));
-		lista.add(new Contato("Leandro Y.", "lele_yoshi@gmail.com","Av do Contra Sushi, 2525"));
+		//lista.add(new Contato("Mateus Q.", "mateusq1@hotmail.com","Rua Vereador Horácio Arantes Silva, 148"));
+		//lista.add(new Contato("Frederico V.", "frcolantonio@gmail.com","Rua do Planalto Verde, 171"));
+		//lista.add(new Contato("Leandro Y.", "lele_yoshi@gmail.com","Av do Contra Sushi, 2525"));
 		
 		ArrayAdapter<Contato> adapter = new ContatoAdapter(lista, this);
 		ListView listaContato = (ListView)findViewById(R.id.listaContatoActivity);

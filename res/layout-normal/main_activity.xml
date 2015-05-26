@@ -11,6 +11,11 @@
     tools:context="com.example.coolagenda.MainActivity">
     
     
-   
+   <Button 
+       android:id="@+id/btnTestarBase"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="testeBase"
+       android:text="@string/btnTesteBase" />
     
 </RelativeLayout>

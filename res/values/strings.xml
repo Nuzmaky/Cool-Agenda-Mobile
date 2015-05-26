@@ -14,5 +14,6 @@
     <string name="txtIDP">ID</string>
     <string name="txtDataInicialP">Data Inicial</string>
     <string name="txtDataFinalP">Data Final</string>
+    <string name="btnTesteBase">Testar Base </string>
 
 </resources>
