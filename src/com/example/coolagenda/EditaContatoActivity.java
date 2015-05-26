@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class EditaContatoActivity extends Activity {
-	
+	/*
 	Contato contato;
 	int posicao;
 	
@@ -70,7 +70,7 @@ public class EditaContatoActivity extends Activity {
 		});
 
 	}
-
+*/
 
 
 }

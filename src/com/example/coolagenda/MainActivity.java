@@ -5,13 +5,25 @@ import java.util.List;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
-public class MainActivity extends Activity{
+public class MainActivity extends Activity implements OnClickListener{
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main_activity);
+		
+		// Login btn evento Click
+		Button btnTestarBase = (Button) findViewById(R.id.btnTestarBase);
+		btnTestarBase.setOnClickListener(this); 	
+                
+    }
+    
+	// ===== LOGIN
+	public void onClick(View v) {
 
 		//testSharedPreferences();
 		//writeFile();

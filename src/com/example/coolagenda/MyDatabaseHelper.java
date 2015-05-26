@@ -5,7 +5,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 public class MyDatabaseHelper extends SQLiteOpenHelper{
-
+	
 	// Versão do banco de dados
 	private static final int DATABASE_VERSION = 1;
 
@@ -14,7 +14,7 @@ public class MyDatabaseHelper extends SQLiteOpenHelper{
 
 	// Tabela de contatos
 	private static final String TABLE_CONTATO = 
-			"CREATE TABLE CONTATO(ID INTEGER, NOME TEXT, EMAIL TEXT, ENDERECO TEXT PRIMARY KEY(ID))";
+			"CREATE TABLE CONTATO(ID INTEGER, NOME TEXT, EMAIL TEXT, ENDERECO TEXT, PRIMARY KEY(ID))";
 
 	public MyDatabaseHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);

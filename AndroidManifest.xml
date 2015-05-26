@@ -26,10 +26,16 @@
        <activity android:name=".Contato"></activity>
        <activity android:name=".ContatoAdapter"></activity>
        <activity android:name=".ContatoActivity"></activity>
+       <activity android:name=".ContatoCRUD"></activity>
+       <activity android:name=".EditaContatoActivity"></activity>
          
         <activity android:name=".Compromisso"></activity>       
         <activity android:name=".CompromissoAdapter"></activity>
-        <activity android:name=".CompromissoActivity"></activity>
+        <activity android:name=".CompromissoActivity"></activity>        
+        <activity android:name=".EditaCompromissoActivity"></activity>
+        
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MyDatabaseHelper"></activity>
         
     </application>
 

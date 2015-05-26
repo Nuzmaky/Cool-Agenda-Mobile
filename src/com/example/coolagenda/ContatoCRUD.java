@@ -71,7 +71,7 @@ public class ContatoCRUD {
 		
 		List<Contato> listaContato = new ArrayList<Contato>();
 		//select para a consulta
-		String selectQuery = "SELECT * FROM CONTATOS ";
+		String selectQuery = "SELECT * FROM CONTATO ";
 
 		SQLiteDatabase db = myDbHelper.getWritableDatabase();
 		Cursor cursor = db.rawQuery(selectQuery, null);
@@ -105,7 +105,7 @@ public class ContatoCRUD {
 		values.put("ENDERECO", contato.getEndereco());
 
 		// atualiza registro
-		int ret = db.update("CONTATOS", //o nome da tabela 
+		int ret = db.update("CONTATO", //o nome da tabela 
 						 values, //lista de valores a serem atualizados
 						 "ID = ?",  //a cláusula WHERE com a variavel de substituicao "?"
 						 new String[] { String.valueOf(contato.getId()) }); //a lista de valores que será utilizada para substituir a variavel de substituicao da clausula WHERE
@@ -118,7 +118,7 @@ public class ContatoCRUD {
 	public void deleteContato(Contato contato) {
 		SQLiteDatabase db = myDbHelper.getWritableDatabase();
 		
-		db.delete("CONTATOS", //o nome da tabela 
+		db.delete("CONTATO", //o nome da tabela 
 				  "ID = ?",  //a cláusula WHERE com a variavel de substituicao "?"
 				  new String[] { String.valueOf(contato.getId()) }); //a lista de valores que será utilizada para substituir a variavel de substituicao da clausula WHERE
 		db.close();
