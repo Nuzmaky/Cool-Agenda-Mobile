@@ -41,9 +41,6 @@ public class LoginActivity extends Activity implements OnClickListener {
 		String senha = txtSenha.getText().toString();
 
 		DialogOkNo(ValidaLogin(login,senha));
-		//if (ValidaLogin(login, senha))
-			//Cadastro(v);
-
 	}
 	
 	// Abre a tela de Cadastro	
@@ -89,14 +86,14 @@ public class LoginActivity extends Activity implements OnClickListener {
 		} 
 		else
 		{
-			startActivity(new Intent(this, ContatoActivity.class));
-			/*
+			//startActivity(new Intent(this, ContatoActivity.class));
+			
 			AlertDialog.Builder alertaNO = new AlertDialog.Builder(this);
 			alertaNO.setTitle("Login");
 			alertaNO.setMessage("Usuário ou senha errados!");
 			dialogNO = alertaNO.create();
 			dialogNO.show();
-			*/
+			
 		
 		}
 	}

@@ -1,4 +1,3 @@
-
 package com.example.coolagenda;
 
 import java.util.ArrayList;
@@ -30,18 +29,20 @@ public class CompromissoActivity extends Activity{
 	{
 		lista = new ArrayList<Compromisso>();
 		
-		lista.add(new Compromisso("Evento tal", "20/05/2015", "20/05/2015"));
-		lista.add(new Compromisso("Evento X", "20/05/2015", "17/02/2015"));
-		lista.add(new Compromisso("Evento Y", "20/05/2015", "14/11/2015"));
-		lista.add(new Compromisso("Evento da Galera", "20/05/2015", "01/12/2015"));
-		lista.add(new Compromisso("Evento Ugul", "20/05/2015", "10/01/2016"));
+		CompromissoCRUD crud = new CompromissoCRUD(this);
+		List<Compromisso> compromissos = crud.getTodosCompromissos();		
 		
+		for (Compromisso cp : compromissos)
+		{
+			lista.add(new Compromisso(cp.getId(), cp.getNome(), cp.getDataInicial(), cp.getDataFinal()));
+		}
 		
 		ArrayAdapter<Compromisso> adapter = new CompromissoAdapter(lista, this);
 		ListView listaCompromisso = (ListView)findViewById(R.id.listaCompromissoActivity);
 		listaCompromisso.setAdapter(adapter);
 		
 		
+		// Clicar em um Compromisso
     	listaCompromisso.setOnItemClickListener(new OnItemClickListener() {
 
 			@Override
@@ -49,8 +50,7 @@ public class CompromissoActivity extends Activity{
 					int position, long id) 
 			{
 				Toast toast = Toast.makeText(getApplicationContext(), "Clicou no item: " + position ,Toast.LENGTH_LONG);
-				toast.show();
-				//mostraDialogCustomizado(position, lista);
+				toast.show();				
 			}		
     	});
 	}

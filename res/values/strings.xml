@@ -15,5 +15,6 @@
     <string name="txtDataInicialP">Data Inicial</string>
     <string name="txtDataFinalP">Data Final</string>
     <string name="btnTesteBase">Testar Base </string>
+    <string name="btnContatos">Contatos</string>
 
 </resources>

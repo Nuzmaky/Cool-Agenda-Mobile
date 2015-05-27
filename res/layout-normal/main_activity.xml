@@ -16,5 +16,13 @@
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"       
        android:text="@string/btnTesteBase" />
+   
+      <Button 
+       android:id="@+id/btnAbreContatos"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:layout_below="@+id/btnTestarBase"      
+       android:text="@string/btnContatos"
+       android:onClick="AbreContatos" />
     
 </RelativeLayout>

@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class EditaCompromissoActivity extends Activity {
-	
+	/*
 	Compromisso compromisso;
 	int posicao;
 
@@ -52,5 +52,5 @@ public class EditaCompromissoActivity extends Activity {
 		});
 
 	}
-	
+*/	
 }

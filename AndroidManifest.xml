@@ -31,7 +31,8 @@
          
         <activity android:name=".Compromisso"></activity>       
         <activity android:name=".CompromissoAdapter"></activity>
-        <activity android:name=".CompromissoActivity"></activity>        
+        <activity android:name=".CompromissoActivity"></activity>     
+        <activity android:name=".CompromissoCRUD"></activity>   
         <activity android:name=".EditaCompromissoActivity"></activity>
         
         <activity android:name=".MainActivity"></activity>
