@@ -35,44 +35,14 @@
         android:text="@string/txtCompromisso"
         android:textColor="#fff"
         android:textSize="10pt"
-        android:layout_marginLeft="200dp"/>
+        android:layout_marginLeft="120dp"/>
     
-    <TextView
-                android:id="@+id/txtNomeP"
-                android:layout_width="110dp"
-                android:layout_height="wrap_content"
-                android:padding="3dip"
-                android:textColor="#fff"
-                android:text="@string/txtNomeP"
-                android:layout_marginLeft="130dp"
-                android:layout_below="@+id/txtCompromisso" />
-
-            <TextView
-                android:id="@+id/txtDataInicialP"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:padding="3dip"
-                android:textColor="#fff"
-                android:text="@string/txtDataInicialP"
-                android:layout_toRightOf="@+id/txtNomeP"
-                android:layout_below="@+id/txtCompromisso"  />
-
-            <TextView
-                android:id="@+id/txtDataFinalP"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:padding="3dip"
-                android:textColor="#fff"
-                android:text="@string/txtDataFinalP"
-                android:layout_toRightOf="@+id/txtDataInicialP"
-                android:layout_below="@+id/txtCompromisso"  />
     
     <ListView
         android:id="@+id/listaCompromissoActivity"
         android:layout_width="310dp"
         android:layout_height="fill_parent"
         android:layout_marginLeft="130dp" 
-        android:layout_marginTop="25dp"
         android:layout_below="@+id/txtCompromisso">
     </ListView>
 
