@@ -27,12 +27,10 @@ public final class R {
         public static final int logo=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f08002f;
-        public static final int btnAbreContatos=0x7f08002e;
+        public static final int action_settings=0x7f08002e;
         public static final int btnCancelar=0x7f08001b;
         public static final int btnLogar=0x7f080003;
         public static final int btnSalvar=0x7f08001a;
-        public static final int btnTestarBase=0x7f08002d;
         public static final int editEditaDataFinalCompromisso=0x7f080019;
         public static final int editEditaDataInicialCompromisso=0x7f080017;
         public static final int editEditaEmailContato=0x7f08001f;
@@ -57,6 +55,7 @@ public final class R {
         public static final int tbListaContato=0x7f080027;
         public static final int text=0x7f080013;
         public static final int textView1=0x7f080000;
+        public static final int txtCompromisso=0x7f08002d;
         public static final int txtDataFinal=0x7f080026;
         public static final int txtDataFinalP=0x7f080009;
         public static final int txtDataInicial=0x7f080025;
@@ -100,6 +99,7 @@ public final class R {
         public static final int cancelar=0x7f050008;
         public static final int hello_world=0x7f050001;
         public static final int salvar=0x7f050007;
+        public static final int txtCompromisso=0x7f05000f;
         public static final int txtDataFinalP=0x7f05000c;
         public static final int txtDataInicialP=0x7f05000b;
         public static final int txtEmailP=0x7f050005;

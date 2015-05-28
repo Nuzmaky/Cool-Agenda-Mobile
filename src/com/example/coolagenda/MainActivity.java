@@ -17,9 +17,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		// POPULA A BASE
 		populaBanco();
 
-		// Login btn evento Click
-		Button btnTestarBase = (Button) findViewById(R.id.btnTestarBase);
-		btnTestarBase.setOnClickListener(this); 		                
+				                
 	}
 	
 	// Abre tela de Contatos
