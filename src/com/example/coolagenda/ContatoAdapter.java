@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class ContatoAdapter extends ArrayAdapter<Contato>{
@@ -33,12 +34,13 @@ public class ContatoAdapter extends ArrayAdapter<Contato>{
 		
 		TextView txvNomeContato = (TextView)convertView.findViewById(R.id.txtNomeContato);
 		TextView txvEmail = (TextView)convertView.findViewById(R.id.txtEmail);
-		TextView txvEndereco = (TextView)convertView.findViewById(R.id.txtEndereco);
+		TextView txvEndereco = (TextView)convertView.findViewById(R.id.txtEndereco);		
 			
 		Contato c = lista.get(position);
 		txvNomeContato.setText(c.getNomeContato());
 		txvEmail.setText(c.getEmail());
-		txvEndereco.setText(c.getEndereco());		
+		txvEndereco.setText(c.getEndereco());	
+		
 		
 		return convertView;		
 		

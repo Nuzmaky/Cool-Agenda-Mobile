@@ -52,7 +52,9 @@
         <ListView
             android:id="@+id/listaContatoActivity"
             android:layout_width="fill_parent"
-            android:layout_height="fill_parent"> 
+            android:layout_height="fill_parent"
+            android:divider="#FFECECEC"
+        	android:dividerHeight="2sp"> 
 			
         </ListView>
     </LinearLayout>     
