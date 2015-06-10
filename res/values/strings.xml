@@ -17,5 +17,6 @@
     <string name="btnTesteBase">Testar Base </string>
     <string name="btnContatos">Contatos</string>
     <string name="txtCompromisso">Compromissos</string>
+    <string name="txtContatos">Contatos</string>
 
 </resources>

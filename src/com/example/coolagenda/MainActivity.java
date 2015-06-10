@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 import android.widget.AdapterView.OnItemClickListener;
@@ -17,7 +18,6 @@ import android.widget.AdapterView.OnItemClickListener;
 public class MainActivity extends Activity implements OnClickListener{
 
 	private List<Compromisso> listaCompromisso;
-	private List<Contato> listaContato;
 	
 	@Override	
 	protected void onCreate(Bundle savedInstanceState) {
@@ -25,23 +25,19 @@ public class MainActivity extends Activity implements OnClickListener{
 		setContentView(R.layout.main_activity);
 
 		// POPULA A BASE
-		populaBanco();		
-		CarregaListaContato();
+		populaBanco();
 		CarregaListaCompromisso();
 		
 		Toast toastt = Toast.makeText(getApplicationContext(), "TA AQUI" ,Toast.LENGTH_LONG);
 		toastt.show();				              
 	}
 	
-	// Abre tela de Contatos
+	//Abre tela de Contatos
 	public void AbreContatos(View v) {
-		startActivity(new Intent(this, ContatoActivity.class));
+	startActivity(new Intent(this, ContatoActivity.class));
+	
 	}		
 	
-	// Abre tela de Compromissos
-	public void onClick(View v) {
-		startActivity(new Intent(this, CompromissoActivity.class));
-	}			
 	
 	
 	
@@ -73,39 +69,40 @@ public class MainActivity extends Activity implements OnClickListener{
 				toast.show();				
 			}		
     	});
-	}
+    }
 	
 	
-	void CarregaListaContato()
-	{
-		listaContato = new ArrayList<Contato>();
+	
+	//void CarregaListaContato()
+	//{
+	//	listaContato = new ArrayList<Contato>();
 		
-		ContatoCRUD crud = new ContatoCRUD(this);
-		List<Contato> contatos = crud.getTodosContatos();
+	//	ContatoCRUD crud = new ContatoCRUD(this);
+	//	List<Contato> contatos = crud.getTodosContatos();
 			
-		for (Contato cn : contatos) 
-		{
-			listaContato.add(new Contato(cn.getId(), cn.getNomeContato(), cn.getEmail(), cn.getEndereco()));
-		}
+	//	for (Contato cn : contatos) 
+	//	{
+	//		listaContato.add(new Contato(cn.getId(), cn.getNomeContato(), cn.getEmail(), cn.getEndereco()));
+	//	}
 
-		ArrayAdapter<Contato> adapter = new ContatoAdapter(listaContato, this);
-		ListView listaContato = (ListView)findViewById(R.id.listaContatoActivity);
-		listaContato.setAdapter(adapter);
+	//	ArrayAdapter<Contato> adapter = new ContatoAdapter(listaContato, this);
+	//	ListView listaContato = (ListView)findViewById(R.id.listaContatoActivity);
+	//	listaContato.setAdapter(adapter);
 		
 		
 		
 		// Clicar em um contato
-    	listaContato.setOnItemClickListener(new OnItemClickListener() {
+    	//listaContato.setOnItemClickListener(new OnItemClickListener() {
 
-			@Override
-			public void onItemClick(AdapterView<?> parent, View view,
-					int position, long id) 
-			{
-				Toast toast = Toast.makeText(getApplicationContext(), "Clicou no item: " + position ,Toast.LENGTH_LONG);
-				toast.show();
-			}		
-    	});		
-	}
+		//	@Override
+		//	public void onItemClick(AdapterView<?> parent, View view,
+		//			int position, long id) 
+		//	{
+		//		Toast toast = Toast.makeText(getApplicationContext(), "Clicou no item: " + position ,Toast.LENGTH_LONG);
+		//		toast.show();
+		//	}		
+    	//});		
+//	}
 	
 			
 
@@ -139,5 +136,11 @@ public class MainActivity extends Activity implements OnClickListener{
 		crudCompromisso.addCompromisso(new Compromisso(4, "Evento da Galera", "20/05/2015", "01/12/2015"));
 		crudCompromisso.addCompromisso(new Compromisso(5, "Evento Ugul", "20/05/2015", "10/01/2016"));
 		crudCompromisso.addCompromisso(new Compromisso(6, "Evento da Facul", "30/07/2015", "31/7/2015"));
+	}
+
+	@Override
+	public void onClick(View v) {
+		// TODO Auto-generated method stub
+		
 	}
 }

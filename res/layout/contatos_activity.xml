@@ -23,22 +23,13 @@
             
             <TextView
                 android:id="@+id/txtNomeContatoP"
-                android:layout_width="120dp"
+                android:layout_width="130dp"
                 android:layout_height="wrap_content"
+                android:textSize="10pt"
                 android:padding="3dip"
+                android:paddingLeft="0dp"
                 android:text="@string/txtNomeContatoP" />
-
-            <TextView
-                android:id="@+id/txtEmailP"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="@string/txtEmailP" />
-
-            <TextView
-                android:id="@+id/txtEnderecoP"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:text="@string/txtEnderecoP" />
+            
         </TableRow>               
     </TableLayout>    
     

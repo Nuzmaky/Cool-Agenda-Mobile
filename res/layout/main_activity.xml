@@ -10,40 +10,37 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.coolagenda.MainActivity" >
 
-    <TextView
-        android:id="@+id/txtNomeContatoP"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:padding="3dip"
-        android:text="@string/txtNomeContatoP"
-        android:textColor="#fff"
-        android:textSize="10pt" />
-
-    <ListView
-        android:id="@+id/listaContatoActivity"
-        android:layout_width="100dp"
-        android:layout_height="fill_parent"
-        android:layout_below="@+id/txtNomeContatoP" >
-    </ListView>
-
     
     <TextView
         android:id="@+id/txtCompromisso"
-        android:layout_width="180dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="3dip"
         android:text="@string/txtCompromisso"
         android:textColor="#fff"
-        android:textSize="10pt"
-        android:layout_marginLeft="120dp"/>
-    
+        android:textSize="8pt"/>
     
     <ListView
         android:id="@+id/listaCompromissoActivity"
-        android:layout_width="310dp"
+        android:layout_width="450dp"
         android:layout_height="fill_parent"
-        android:layout_marginLeft="130dp" 
+        android:padding="10dp" 
         android:layout_below="@+id/txtCompromisso">
     </ListView>
 
+    <Button
+        android:id="@+id/btContatos"
+        android:onClick="AbreContatos"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_alignBaseline="@+id/txtCompromisso"
+        android:layout_alignBottom="@+id/txtCompromisso"
+        android:layout_toRightOf="@+id/txtCompromisso"
+        android:textColor="#fff"
+        android:text="@string/txtContatos"
+        android:padding="0dip"
+        android:textSize="6pt"
+        android:layout_marginLeft="90dp"
+         />
+   
 </RelativeLayout>
