@@ -12,7 +12,7 @@
 
     <TextView
                 android:id="@+id/txtCompromisso"
-                android:layout_width="190dp"
+                android:layout_width="160dp"
                 android:layout_height="40dp"
                 android:textSize="10pt"
                 android:textColor="#fff"
@@ -25,6 +25,7 @@
         android:layout_width="260dp"
         android:layout_height="40dp"
         android:layout_alignRight="@+id/listaCompromissoActivity"
+        android:layout_toRightOf="@+id/txtCompromisso"
         android:background="#242424"
         android:onClick="AbreContatos"
         android:text="@string/txtContatos"

@@ -20,21 +20,22 @@
 
         <TextView
             android:id="@+id/txtNome"
-            android:layout_width="120dp"
+            android:layout_width="100dp" 
+            android:text="asddasdad"           
             android:textColor="#fff"
             android:layout_height="wrap_content"
             android:padding="3dip" />
 
         <TextView
             android:id="@+id/txtDataInicial"
-            android:layout_width="120dp"
+            android:layout_width="90dp"            
             android:textColor="#fff"
             android:layout_height="wrap_content"
             android:padding="3dip" />
 
         <TextView
             android:id="@+id/txtDataFinal"
-            android:layout_width="120dp"
+            android:layout_width="90dp"            
             android:textColor="#fff"
             android:layout_height="wrap_content"
             android:padding="3dip" />
