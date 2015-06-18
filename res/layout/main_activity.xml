@@ -3,44 +3,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#aaa"
+    android:background="#454545"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.coolagenda.MainActivity" >
 
-    
     <TextView
-        android:id="@+id/txtCompromisso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="3dip"
-        android:text="@string/txtCompromisso"
+                android:id="@+id/txtCompromisso"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:textSize="10pt"
+                android:textColor="#fff"
+                android:background="#070c69"
+                android:gravity="center"
+                android:text="@string/txtCompromisso" />
+
+    <Button
+        android:id="@+id/btContatos"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_alignRight="@+id/listaCompromissoActivity"
+        android:background="#242424"
+        android:onClick="AbreContatos"
+        android:text="@string/txtContatos"
         android:textColor="#fff"
-        android:textSize="8pt"/>
-    
+        android:textSize="8pt" />
+
     <ListView
         android:id="@+id/listaCompromissoActivity"
         android:layout_width="450dp"
         android:layout_height="fill_parent"
-        android:padding="10dp" 
+        android:layout_alignParentRight="true"
         android:layout_below="@+id/txtCompromisso">
     </ListView>
-
-    <Button
-        android:id="@+id/btContatos"
-        android:onClick="AbreContatos"
-        android:layout_width="100dp"
-        android:layout_height="150dp"
-        android:layout_alignBaseline="@+id/txtCompromisso"
-        android:layout_alignBottom="@+id/txtCompromisso"
-        android:layout_toRightOf="@+id/txtCompromisso"
-        android:textColor="#fff"
-        android:text="@string/txtContatos"
-        android:padding="0dip"
-        android:textSize="6pt"
-        android:layout_marginLeft="90dp"
-         />
    
 </RelativeLayout>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tableLayoutCompromisso"
+    android:background="#070c69"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
@@ -20,18 +21,21 @@
         <TextView
             android:id="@+id/txtNome"
             android:layout_width="120dp"
+            android:textColor="#fff"
             android:layout_height="wrap_content"
             android:padding="3dip" />
 
         <TextView
             android:id="@+id/txtDataInicial"
             android:layout_width="120dp"
+            android:textColor="#fff"
             android:layout_height="wrap_content"
             android:padding="3dip" />
 
         <TextView
             android:id="@+id/txtDataFinal"
             android:layout_width="120dp"
+            android:textColor="#fff"
             android:layout_height="wrap_content"
             android:padding="3dip" />
     </TableRow>    

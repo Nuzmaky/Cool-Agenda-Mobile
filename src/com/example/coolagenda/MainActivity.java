@@ -26,11 +26,9 @@ public class MainActivity extends Activity implements OnClickListener{
 
 		// POPULA A BASE
 		populaBanco();
-		CarregaListaCompromisso();
-		
-		Toast toastt = Toast.makeText(getApplicationContext(), "TA AQUI" ,Toast.LENGTH_LONG);
-		toastt.show();				              
+		CarregaListaCompromisso();				              
 	}
+	
 	
 	//Abre tela de Contatos
 	public void AbreContatos(View v) {

@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -24,6 +25,11 @@ public class ContatoActivity extends Activity {
 		
 		CarregaLista();
 	}
+	
+	public void AbreCompromissos(View v) {
+		startActivity(new Intent(this, MainActivity.class));
+		
+		}	
 	
 	void CarregaLista()
 	{
